@@ -1,0 +1,276 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+  }
+  
+  form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    margin-bottom: 12%;
+  }
+  
+  h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+  }
+
+  button:hover {
+    background-color: Green;
+  }
+
+  button a {
+    text-decoration: none;
+    color: black;
+    font-size:2vw;
+  }
+  
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.role {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    form {
+      max-width: 480px;
+    }
+  
+  }
+.header{
+  width: 100%;
+}
+
+.header-left{
+  float: left;
+  width: 60%;
+}
+.header-right{
+  float: left;
+  width: 40%;
+}
+.header-right h4 {
+  margin-top: 5%;
+  margin-bottom: 4%;
+  text-align: right;
+}
+#logout{
+  text-align: right;
+  margin-right: 1%;
+}
+#logout:hover {
+  color: blue;
+}
+body{
+  background-image: url("../Images/background.jpg");
+}
+.w3-third {
+  color:black;
+  float:left;
+  width:24%;
+  text-align:center;
+  margin-right : 1%;
+    
+}
+.w3-third p {
+  text-align: left;
+}
+
+.f1 {
+  background-color:#4cc7cf;
+  padding:4%;
+  float:left;
+  width:23%;
+  text-align: center;
+  margin: 1%;
+  font-size: 2vw;
+  text-decoration: none;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.f1 a:link {
+  text-decoration: none;
+}
+
+.f1:hover {
+  background-color: green;
+}
+
+.f2 a:link {
+  text-decoration: none;
+}
+
+.f2:hover {
+  background-color: green;
+}
+
+.f3 a:link {
+  text-decoration: none;
+}
+
+.f3:hover {
+  background-color: green;
+}
+
+.f4 a:link {
+  text-decoration: none;
+}
+
+.f4:hover {
+  background-color: green;
+}
+
+.f2 {
+  background-color:#4cc7cf;
+  padding:4%;
+  float:left;
+  width:23%;
+  margin: 1%;
+  text-align: center;
+  font-size: 2vw;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.f3 {
+  background-color:#4cc7cf;
+  padding:4%;
+  float:left;
+  width:23%;
+  margin: 1%;
+  text-align: center;
+  font-size: 2vw;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.f4 {
+  background-color: #4cc7cf;
+  padding:4%;
+  float:left;
+  width:23%;
+  margin: 1%;
+  text-align: center;font-size: 2vw;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.f1 a {
+  color: black;
+}
+
+.f2 a {
+  color: black;
+}
+
+.f3 a {
+  color: black;
+}
+
+.f4 a {
+  color: black;
+}
+
+a#forgot {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width:700px) {
+  .f1, .f2, .f3, .f4 {
+    width:100%;
+    font-size:5vw;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .w3-third {
+    width:100%;
+    font-size:4vw;
+  }
+}
