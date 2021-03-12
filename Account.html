@@ -5,9 +5,46 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="CSS/style.css">
-<style>
-    
-</style>
+<script src="tablelist.js" type="text/javascript" ></script>
+
+    <script type="text/javascript">
+        function addRow(col1Text, col1Width, 
+                        col2Text, col2Width, 
+                        col3Text, col3Width) {
+            if (!document.getElementsByTagName) {
+                return;
+            }
+            var x = document.getElementById("entries").rows.length;
+            tabBody=document.getElementsByTagName("tbody").item(0);
+            row=document.createElement("tr");
+            row.id=x;
+            cell1 = document.createElement("td");
+            cell2 = document.createElement("td");
+            cell3 = document.createElement("td");
+            /*cell1.width=col1Width+"px";
+            cell2.width=col2Width+"px";
+            cell3.width=col3Width+"px";*/
+            textnode1=document.createTextNode(col1Text);
+            textnode2=document.createTextNode(col2Text);
+            textnode3=document.createTextNode(col3Text);
+            cell1.appendChild(textnode1);
+            cell2.appendChild(textnode2);
+            cell3.appendChild(textnode3);
+            row.appendChild(cell1);
+            row.appendChild(cell2);
+            row.appendChild(cell3);
+            tabBody.appendChild(row);
+            tableHighlightRow();
+        }
+
+        window.onload=function(){
+            for ( r = 0; r < 25; r++ ) {
+                addRow( r+",1", 200, // 200px width 
+                        r+",2", 200, 
+                        r+",3", 200);
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="header" style="overflow: auto;">
@@ -19,8 +56,28 @@
             <p id="logout" style="font-size: 2vw;" >Logout</p>
         </div>
   </div>
-  <div class="">
-
+  <div style ="width: 60%; float:left; height: 200px; background-color: gray;" class="Detail">
+  </div>
+  <div style="width: 40%; float:left; height: 200px; background-color: lightblue;" class="CRUD">
+  </div>
+  <div class="List">
+      <table class="TableListJS" id="entries">
+          <thead>
+              <tr>
+                 <td style="float: left; width: 33%;">Full Name</td>
+                 <td style="float: left; width: 33%;">Column 2</td>
+                 <td style="float: left; width: 33%;">Column 3</td>
+              </tr>
+          </thead>
+          <tbody>
+              <tr style="float: left; width: 100%;">
+                  <td style="float: left; width: 33%;">Entry 1</td>
+                  <td style="float: left; width: 33%;">Entry 2</td>
+                  <td style="float: left; width: 33%;">Entry 3</td>
+              </tr>
+          </tbody>
+      </table>
+      <input type=submit name=action value="Next ->" tabindex="3">
   </div>
 
   <div style="overflow: none" class="w3-row-padding">
