@@ -5,46 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="CSS/style.css">
-<script src="tablelist.js" type="text/javascript" ></script>
-
-    <script type="text/javascript">
-        function addRow(col1Text, col1Width, 
-                        col2Text, col2Width, 
-                        col3Text, col3Width) {
-            if (!document.getElementsByTagName) {
-                return;
-            }
-            var x = document.getElementById("entries").rows.length;
-            tabBody=document.getElementsByTagName("tbody").item(0);
-            row=document.createElement("tr");
-            row.id=x;
-            cell1 = document.createElement("td");
-            cell2 = document.createElement("td");
-            cell3 = document.createElement("td");
-            /*cell1.width=col1Width+"px";
-            cell2.width=col2Width+"px";
-            cell3.width=col3Width+"px";*/
-            textnode1=document.createTextNode(col1Text);
-            textnode2=document.createTextNode(col2Text);
-            textnode3=document.createTextNode(col3Text);
-            cell1.appendChild(textnode1);
-            cell2.appendChild(textnode2);
-            cell3.appendChild(textnode3);
-            row.appendChild(cell1);
-            row.appendChild(cell2);
-            row.appendChild(cell3);
-            tabBody.appendChild(row);
-            tableHighlightRow();
-        }
-
-        /*window.onload=function(){
-            for ( r = 0; r < 25; r++ ) {
-                addRow( r+"1", 200,
-                        r+"2", 200,
-                        r+"3", 200);
-            }
-        }*/
-    </script>
+<link rel="stylesheet" href="CSS/list.css">
 </head>
 <body>
     <div class="header" style="overflow: auto;">
@@ -98,12 +59,12 @@
             <tr style="float: left; width: 100%;">
                 <td style="float: left; width: 5%; text-align: center;">5</td>
                 <td style="float: left; width: 30%;">Nguyen Van E</td>
-                <td style="float: left; width: 30%;">Student    </td>
+                <td style="float: left; width: 30%;">Student</td>
                 <td style="float: left; width: 30%;">NguyenVanE@gmail.com</td>
             </tr>
           </tbody>
       </table>
-      <input type=submit name=action value="Next ->" tabindex="3">
+      <input type=submit name=action value="Next Page" tabindex="3">
   </div>
 
   <div style="overflow: none" class="w3-row-padding">

@@ -1,0 +1,42 @@
+/*List*/
+table#entries {
+    background-color: #fd9;
+    width: 100%;
+  }
+  tbody {
+    background-color: #fff;
+    height: 150px;
+    overflow: auto;
+  }
+  td {
+    padding: 3px 10px;
+  }
+  
+  thead > tr, tbody{ 
+    display:block;
+  }
+  
+  #entries tr.clicked { background: #ccd; }
+  #entries tr.highlight { background: #eef; }
+  
+  tr#accthead td {
+    text-align: center;
+    font-size:20px;
+  }
+  
+  tbody#acctbody td {
+    text-align: left;
+    font-size: 18px   ;
+  }
+  
+  @media screen and (max-width:500px) {
+    tr#accthead td {
+      font-size:3vw;
+    }
+  }
+  
+  @media screen and (max-width:500px) {
+    tbody#acctbody td {
+      font-size:2.5vw;  
+    }
+  }
